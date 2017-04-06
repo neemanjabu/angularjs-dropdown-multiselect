@@ -1,3 +1,5 @@
+**Deprecated: [use the orginal repo that is back to being actively maintained](https://github.com/dotansimha/angularjs-dropdown-multiselect)**
+
 # AngularJS Dropdown Multiselect
 [![CDNJS](https://img.shields.io/cdnjs/v/myforce-angularjs-dropdown-multiselect.svg)](https://cdnjs.com/libraries/myforce-angularjs-dropdown-multiselect)
 
