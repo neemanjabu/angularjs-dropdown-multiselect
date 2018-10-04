@@ -29,7 +29,7 @@ directiveModule.directive('ngDropdownMultiselect', ['$filter', '$document', '$co
 
 			var template = '<div class="multiselect-parent btn-group dropdown-multiselect" ng-class="{open: open}">';
 			template += '<button ng-disabled="disabled" type="button" class="dropdown-toggle" ng-class="settings.buttonClasses" ng-click="toggleDropdown()">{{getButtonText()}}&nbsp;<span class="caret"></span></button>';
-			template += '<ul class="dropdown-menu dropdown-menu-form" ng-if="open" ng-style="{display: open ? \'block\' : \'none\', height : settings.scrollable ? settings.scrollableHeight : \'auto\', overflow: \'auto\' }" >';
+			template += '<ul class="dropdown-menu dropdown-menu-form" ng-show="open" ng-style="{display: open ? \'block\' : \'none\', height : settings.scrollable ? settings.scrollableHeight : \'auto\', overflow: \'auto\' }" >';
 			template += '<li ng-if="settings.showCheckAll && settings.selectionLimit !== 1"><a ng-keydown="keyDownLink($event)" data-ng-click="selectAll()" tabindex="-1" id="selectAll"><span class="glyphicon glyphicon-ok"></span>  {{texts.checkAll}}</a>';
 			template += '<li ng-if="settings.showUncheckAll"><a ng-keydown="keyDownLink($event)" data-ng-click="deselectAll();" tabindex="-1" id="deselectAll"><span class="glyphicon glyphicon-remove"></span>   {{texts.uncheckAll}}</a></li>';
 			template += '<li ng-if="settings.selectByGroups && ((settings.showCheckAll && settings.selectionLimit > 0) || settings.showUncheckAll)" class="divider"></li>';
